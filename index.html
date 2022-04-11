@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cumple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+     <a href="#" class="logo">San Luisa</a>
+     <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">work</a></li>
+        <li><a href="#">contact</a></li>
+    </ul>
+ </header>  
+ <section>
+     <img src="./hola/stars.png" id="stars">
+     <img src="./hola/moon.png" id="moon">
+     <img src="./hola/mountains_behind.png" id="mountains_behind">
+     <h2 id="text"> FELIZ PUMPEAÑOS</h2>
+     <a href="#sec" id="btn"> cumpleaños</a>
+     <img src="./hola/mountains_front.png" id="mountains_front">
+ </section>
+ <div class="sec" id="sec">
+     <h2>14/Abril/1997</h2>
+     <p>Ese fue el dia que todo empezo, hoy en este dia quiero recordarte lo importante que eres para mi y lo feliz que me haces
+         estar viviendo esto contigo es un sueño hecho realidad, simpre soñe con algo asi, eres lo mejor que me ha pasado y no 
+         te imaginas como me hace sentir eso, me encanta despertarme cada mañana y ver tu cara de loca sin bañar hedionda a baba
+         <br><br> tuve que esperar para que te duermas para terminar estas cosas jaja, es que queria que fuera sorpresa, estoy 
+         escribiendo esto y aun me da nervios que me pilles haciendo esto, espero que todas tus metas se cumplan y aunque suene
+         egoista QUIERO ESTAR ALLI A TU LADO CUANDO LAS CUMPLAS :3, te amo mucho eres mi inspiracion a seguir adelante y mi
+         mayor logro, es una suerte para mi tener a alguien como tu a mi lado apoyandome.
+         feliz 6 meses  ¡Y QUE VIVA EL PARO NACIONAL #28ABRL!.
+     </p>
+     <video src="./hola/El Satanas - Champeta Africana.mp4" controls preload="auto"></video>
+
+ </div>
+ <script>
+     let stars = document.getElementById('stars')
+     let moon = document.getElementById('moon')
+     let mountains_behind = document.getElementById('mountains_behind')
+     let text = document.getElementById('text')
+     let btn = document.getElementById('btn')
+     let mountains_front = document.getElementById('mountains_front')
+     let header = document.querySelector('header');
+
+     window.addEventListener('scroll', function(){
+         let value =window.scrollY;
+         stars.style.left = value * 0.25 + 'px';
+         moon.style.top = value * 1.05 + 'px';
+         mountains_behind.style.top = value * 0.5 + 'px';
+         mountains_front.style.top = value * 0 + 'px';
+         text.style.marginRight = value * 4 + 'px';
+         text.style.marginTop = value * 1.5 + 'px';
+         btn.style.marginTop = value * 1.5 + 'px';
+         header.style.top = value * 0.5 + 'px';
+
+
+     })
+ </script>
+</body>
+</html>
